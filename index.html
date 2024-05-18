@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="style" href="css/style.css">
+    <title>ChatGPT</title>
+</head>
+<body>
+    <br>
+    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+        Настройки
+    </button>
+      
+      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">Настройки</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="col">
+                <button type="button" class="btn btn-outline-primary" id="toggle-theme">Темная тема</button>
+                <button type="button" class="btn btn-outline-warning">Сбросить контекст</button>
+                
+            </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal">Выйти из аккаунта</button>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Модальное окно</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Содержимое модального окна здесь.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center mt-5">
+        <h1>ChatGPT</h1>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <div class="mb-2">
+                        <h5>Примеры</h5>
+                    </div>
+                    <p>Как стать крутым прогером?</p>
+                    <p>Что подарить другу?</p>
+                    <p>Реши следующую задачу: ...</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <div class="mb-2">
+                        <h5>Я уже хз что сюда писать оставлю так все</h5>
+                    </div>
+                    <p>Remembers what user said earlier in the conversation</p>
+                    <p>Allows user ti provide follow-up corrections</p>
+                    <p>Trained to decline inappropriate request</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <div class="mb-2">
+                        <h5>И тут тоже</h5>
+                    </div>
+                    <p>May occasionally generate incorrect information</p>
+                    <p>May occasionally produce harmful instructions or biased content</p>
+                    <p>Limited knowledge of world and events after 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <input type="text" class="form-control" placeholder="Type a message..." aria-label="Chat input">
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
