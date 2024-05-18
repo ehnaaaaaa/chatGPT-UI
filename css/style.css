@@ -7,3 +7,8 @@ body.dark-theme {
     background-color: #12121212;
     color: #ffff;
 }
+
+.mt-5 {
+    position: absolute;
+    bottom: 0;
+}
