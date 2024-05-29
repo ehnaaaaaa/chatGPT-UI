@@ -1,9 +1,9 @@
-body.light-theme {
+.light-theme {
     background-color: #ffff;
     color: #000;
 }
 
-body.dark-theme {
+.dark-theme {
     background-color: #12121212;
     color: #ffff;
 }
